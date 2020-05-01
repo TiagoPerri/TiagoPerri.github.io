@@ -139,24 +139,30 @@
     margin: auto;
 }
 
-.trabalho h2{
-    padding: 0 0 15px;
+.container h2{
+    padding: 15px 0;
     font-size: 3em;
     border-bottom: 2px dashed black;
 }
 
-.trabalho h3{
-    padding: 15px 0;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-.trabalho p{
+.container p{
+    font-size: 1.3em;
     line-height: 1.7;
 }
 
-.estudos h2{
-    padding: 35px 0 15px;
-    font-size: 3em;
-    border-bottom: 2px dashed black;
+.container h3{
+    padding: 15px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #0B1980;
+    font-weight: bold;
+}
+
+.container h3 a{
+    font-weight: bold;
+    color: #0B1980;
+}
+
+.container span{
+    color: black;
 }
