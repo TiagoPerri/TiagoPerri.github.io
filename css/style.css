@@ -3,17 +3,11 @@
 }
 
 .container-header{
-    max-width: 60%;
-    margin: 90px auto;
+    max-width: 70%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.logo{
-    font-family: 'Share Tech', sans-serif;
-    display: inline;
-    font-size: 3em;
 }
 
 @media screen and (max-width: 2561px){
@@ -41,11 +35,12 @@
         color: black;
         text-transform: uppercase;
         letter-spacing: 5px;  
+        font-size: 1.5em;
     }
     
     .nav-header ul li a:hover{
         color: #0B1980;
-        font-size: 1.05em;
+        font-size: 1.55em;
     }
 }
 
@@ -64,4 +59,104 @@
     .header__btnMenu{
         display: none;
     }
+}
+
+.logo{
+    display: inline;
+    font-size: 3em;
+}
+
+.logo i{
+    font-size: .8em;
+}
+
+.profile{
+    width: 100%;
+    height: 400px;
+    margin: 110px 0;
+}
+
+.container-profile{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 2px solid #0B1980;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h1{
+    padding: 0 15px 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.card img{
+    max-width: 250px;
+    max-height: 350px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    margin: 0;
+}
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card ul li{
+    text-align: center;
+}
+
+.card ul li a{
+    color: black;
+    padding: 20px;
+}
+
+.card ul li a i{
+    font-size: 2em;
+}
+
+.bio{
+    text-align: center;
+    width: 50%;
+    line-height: 1.7;
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.trabalho h2{
+    padding: 0 0 15px;
+    font-size: 3em;
+    border-bottom: 2px dashed black;
+}
+
+.trabalho h3{
+    padding: 15px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.trabalho p{
+    line-height: 1.7;
+}
+
+.estudos h2{
+    padding: 35px 0 15px;
+    font-size: 3em;
+    border-bottom: 2px dashed black;
 }

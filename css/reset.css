@@ -6,6 +6,10 @@ a{
 	text-decoration: none;
 }
 
+body, html{
+	font-family: 'Share Tech', sans-serif;
+}
+
 ul, ol{
 	list-style: none;
 }
