@@ -1,0 +1,67 @@
+.header{
+    width: 100%;
+}
+
+.container-header{
+    max-width: 60%;
+    margin: 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Share Tech', sans-serif;
+    display: inline;
+    font-size: 3em;
+}
+
+@media screen and (max-width: 2561px){
+    /*MENU HAMBURGUER*/
+    .nav-header{
+        display: block;
+        width: 100%;
+    }
+    
+    .nav-header ul li{
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-bottom: 2px dashed black;
+        padding: 20px 0;
+    }
+    
+    .nav-header ul li:first-child{
+        border-top: 2px dashed black;
+        margin-top: 15px;
+    }
+    
+    .nav-header ul li a{
+        font-family: 'Share Tech', sans-serif;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 5px;  
+    }
+    
+    .nav-header ul li a:hover{
+        color: #0B1980;
+        font-size: 1.05em;
+    }
+}
+
+.header__btnMenu{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.js .nav-header{
+    transition: max-height .9s linear;
+}
+
+@media screen and (min-width: 2561px){
+    .header__btnMenu{
+        display: none;
+    }
+}
