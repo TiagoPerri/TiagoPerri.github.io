@@ -1,10 +1,10 @@
-$('a').click(function(e){
+$('.nav-header a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top,
-        menuHeight = $('nav').innerHeight();
+        menuHeight = $('nav-header').innerHeight();
 
     $('html, body').animate({
-        scrollTop: targetOffset
+        scrollTop: targetOffset - menuHeight
     }, 900);
 });

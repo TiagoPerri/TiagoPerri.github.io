@@ -140,18 +140,13 @@
 }
 
 .container h2{
-    padding: 15px 0;
+    padding: 44px 0 15px;
     font-size: 3em;
     border-bottom: 2px dashed black;
 }
 
-.container p{
-    font-size: 1.3em;
-    line-height: 1.7;
-}
-
 .container h3{
-    padding: 15px 0;
+    padding: 15px 0 10px;
     font-size: 2em;
     text-transform: uppercase;
     color: #0B1980;
@@ -166,3 +161,19 @@
 .container span{
     color: black;
 }
+
+.container p{
+    font-size: 1.3em;
+    line-height: 1.7;
+}
+
+.container a{
+    color: #0B1980;
+    font-size: 1.3em;
+}
+
+.container a:hover{
+    color: green;
+    font-size: 1.35em;
+}
+
