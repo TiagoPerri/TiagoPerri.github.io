@@ -72,7 +72,7 @@
 
 .profile{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     margin: 110px 0;
 }
 
@@ -91,7 +91,7 @@
     align-items: center;
 }
 
-.card h1{
+.card p{
     padding: 0 15px 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -173,7 +173,116 @@
 }
 
 .container a:hover{
-    color: green;
+    color: #045B00;
     font-size: 1.35em;
 }
 
+.estudos h3{
+    font-size: 1.5em;
+}
+
+.minicurso .container h3{
+    color: #045B00;
+    font-size: 1.5em;
+}
+
+.minicurso .container p{
+    font-size: 1em;
+}
+
+.others .container h3{
+    border-bottom: 2px solid #045B00;
+    font-size: 1.7em;
+    color: #045B00;
+    padding: 25px 0 5px;
+}
+
+.others .container h4{
+    font-size: 1.6em;
+    color: #0B1980;
+    font-weight: bold;
+    padding: 10px 0 0;
+}
+
+.others .container ul{
+    font-size: 1.3em;
+    padding-top: 5px;
+}
+
+.others .container ul li{
+    list-style: circle;
+    list-style-position: inside;
+    padding: 5px 25px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 400px;
+    background-color: #0B1980;
+    margin-top: 50px;
+}
+
+.container-footer, .sub-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+    color: beige;
+    padding-top: 50px;
+}
+
+.mapasite p, .redes p{
+    padding: 0 0 15px 0;
+    font-size: 1.5em;
+}
+
+.mapasite ul li{
+    padding: 7px 0;
+    list-style: inside circle;
+}
+
+.mapasite a, .redes a{
+    color: beige;
+    font-size: 1.3em;
+}
+
+.mapasite a:hover, .redes a:hover{
+    border-bottom: 1px dashed beige;
+    font-size: 1.37em;
+}
+
+.links-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes ul li{
+    padding: 7px 0;
+}
+
+.sub-footer{
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 1024px){
+    .container-header, .container-profile, .container-footer, .container{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .profile{
+        margin-bottom: 40px;
+    }
+
+    .container-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio{
+        width: 80%;
+        padding-top: 40px;
+    }
+}
