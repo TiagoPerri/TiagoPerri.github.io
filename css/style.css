@@ -266,7 +266,7 @@
 }
 
 @media screen and (max-width: 1024px){
-    .container-header, .container-profile, .container-footer, .container{
+    .container-header, .container-profile, .container-footer, .sub-footer, .container{
         max-width: 80%;
     }
 }
@@ -284,5 +284,65 @@
     .bio{
         width: 80%;
         padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 628px){
+    .redes{
+        padding-top: 40px;
+    }
+
+    .sub-footer p{
+        padding: 10px 0;
+    }
+
+    .bio{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+   .container-profile{
+       max-width: 90%;
+   }
+
+    .container h2{
+        font-size: 2.5em;
+    }
+
+    .container h3{
+        font-size: 1.5em;
+    }
+
+    .container p, .container a{
+        font-size: 1em
+    }
+}
+
+@media screen and (max-width: 375px){
+    .logo{
+        font-size: 2.5em;
+    }
+
+    .header__btnMenu{
+        font-size: 1.3em;
+    }
+
+    .nav-header ul li{
+        font-size: .91em;
+    }
+
+    .card nav ul li{
+        font-size: .8em;
+    }
+
+    .container h2{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container-profile{
+        max-width: 100%;
     }
 }
