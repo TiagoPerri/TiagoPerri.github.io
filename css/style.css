@@ -51,6 +51,10 @@
     color: black;
 }
 
+.header__btnMenu:hover{
+    cursor: pointer;
+}
+
 .js .nav-header{
     transition: max-height .9s linear;
 }
@@ -120,6 +124,12 @@
 .card ul li a{
     color: black;
     padding: 20px;
+
+    transition: all .2s linear;
+}
+
+.card ul li a:hover{
+    color: #0B1980;
 }
 
 .card ul li a i{
