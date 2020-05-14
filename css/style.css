@@ -2,12 +2,17 @@
     width: 100%;
 }
 
+abbr{
+    text-decoration: none;
+}
+
 .container-header{
     max-width: 70%;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 2561px){
@@ -51,8 +56,14 @@
     color: black;
 }
 
-.header__btnMenu:hover{
+.header__btnMenu:hover,label:hover{
     cursor: pointer;
+}
+
+label{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .js .nav-header{
@@ -187,6 +198,72 @@
     font-size: 1.35em;
 }
 
+.portfolio{
+    width: 100%;
+    min-height: 900px;
+    background-color: #0B1980;
+}
+
+.portfolio h2{
+    text-align: center;
+    border: none;
+    color: white;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+}
+
+.portfolio h3{
+    color: #045B00;
+    text-align: center;
+    background-color: rgb(0,0,0,.5);
+}
+
+.portfolio-card h3{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.content-portfolio-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-portfolio-card img{
+    box-shadow: -30px 30px 10px rgba(0,0,0,.7);
+    margin-bottom: 50px;
+}
+
+.content-portfolio-card p{
+    color: beige;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-portfolio-card a{
+    color: beige;
+    padding: 15px;
+    width: 20%;
+    margin-bottom: 30px;
+    border: 4px solid black;
+    text-align: center;
+    box-shadow: 0px 7px black;
+    background-color: rgba(0,0,0,.4);
+}
+
+.content-portfolio-card a:hover{
+    background-color: rgba(0,0,0,.8);
+    color: beige;
+}
+
+.content-portfolio-card a:active{
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+}
+
 .estudos h3{
     font-size: 1.5em;
 }
@@ -225,9 +302,17 @@
     padding: 5px 25px;
 }
 
+.congressos span{
+    font-weight: bold;
+}
+
+.others .container .palestras h4{
+    font-size: 1.4em;
+}
+
 .footer{
     width: 100%;
-    min-height: 400px;
+    min-height: 460px;
     background-color: #0B1980;
     margin-top: 50px;
 }

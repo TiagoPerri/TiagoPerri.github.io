@@ -14,6 +14,7 @@
         <meta property="og:title" content="Tiago Perri - Desenvolvedor Web em Cornélio Procópio - Pr."/>
         <meta property="og:description" content="Site pessoal de Tiago Perri Gonçalves de Oliveira, desenvolvedor Web de Cornélio Procópio - Pr. onde nos é apresentado seu histórico profissional, venha conhecer seu trabalho!"/>
         <meta property="og:url" content="https://tiagoperri.github.io/"/>
+        <meta property="og:image" content="https://tiagoperri.github.io/img/FotoCardPrincipal.jpg"/>
 
 
         <meta name="keywords" content="Tiago, Perri, Tiago Perri, Dev, desenvolvedor, desenvolvedor web, web, html5, HTML5, css, CSS3, cornélio procópio, sites, criação de sites, cornélio, procópio, javascript, Javascript, Tiago Perri Gonçalves de Oliveira, Tiago Perri Gonçalves. Tiago Oliveira"> 
@@ -43,10 +44,13 @@
 			<div class="container-header">
 				<p class="logo">T.P.G.O. <i class="fas fa-laptop-code"></i></p>
 
-				<button class="header__btnMenu" style="display: none;"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
+                <label for="menuzin">Menu <br>
+                    <button id="menuzin" class="header__btnMenu" style="display: none;"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button> 
+                </label>
 
                 <nav class="nav-header">
                     <ul>
+                        <li><a href="#portfolio">Portfólio</a></li>
                         <li><a href="#trabalho">Atuação Profissional</a></li>
                         <li><a href="#estudos">Formação Acadêmica</a></li>
                         <li><a href="#cursos">Cursos</a></li>
@@ -81,6 +85,35 @@
             </div>
         </section>
 
+       
+        <section class="portfolio" id="portfolio">
+            <div class="container" data-aos="fade-down" data-aos-duration="1000">
+                <h2>Portfólio</h2>
+                <div class="carousel">
+                    <!--<div class="portfolio-card">
+                        <h3>Lex Advocacia</h3>
+                        <div class="content-portfolio-card">
+                            <img src="img/lex-image.png" alt="Logotipo Lex Advocacia">
+                            <p>Site institucional da Lex Advocacia, empresa de advocacia em Cornélio Procópio - <abbr title="Paraná">PR</abbr>, gerida pelo Dr. João Gonçalves de Oliveira Junior. Desenvolvido sob responsabilidade minha desde o design inicial até a publicação e manutenção do site. Vá agora mesmo conferir o resultado final do que foi meu primeiro projeto profissional!</p>
+
+                            <a href="#">Ir ao site!</a>
+                        </div>
+                    </div>-->
+
+                    <div class="portfolio-card">
+                        <h3>Projeto Infusion</h3>
+                        <div class="content-portfolio-card">
+                            <img src="img/infusion.png" alt="Logotipo Projeto Infusion">
+                            <p>Projeto construído nos estudos do curso "Web Design Completo", da Serfrontend, pela Udemy; Desenvolvido com o intuito de treinamento, apenas a página Home está online.</p>
+
+                            <a target="_blank" href="https://projetoinfusion-tiago-perri.netlify.app/">Ir ao site!</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <section class="trabalho" id="trabalho">
             <div class="container" data-aos="fade-down" data-aos-duration="1000">
                 <h2>Atuação Profissional</h2>
@@ -88,18 +121,17 @@
                 <article data-aos="flip-left" data-aos-duration="1000">
                     <h3>Lex Advocacia - <span> De 10/2016 Até 03/2020</span></h3> 
                     <p>Enquadramento Funcional: Secretário</p>
-                    <p>Descrição: A Lex Advocacia é uma empresa de advocacia, como secretário obtive experiência com atendimento ao cliente, programas judiciais, digitalização de documentos, serviços bancários, correios, entre outros;</p> <br>
-                    <!--<a href=""><b>Vá para o Website da Lex Advocacia que eu mesmo desenvolvi clicando aqui!</b></a>-->
+                    <p>Descrição: A Lex Advocacia é uma empresa de advocacia, como secretário obtive experiência com atendimento ao cliente, programas judiciais, digitalização de documentos, serviços bancários, correios, entre outros;</p>
                     <hr>
 
                     <h3>Yankton Technologies -<span> De 03/2020 Até 05/2020</span></h3> 
                     <p>Enquadramento Funcional: Desenvolvedor estagiário</p>
-                    <p>Descrição: Estágio que me proporcionou experiência em desenvolvimento Web e aplicativos utilizando as tecnologias node.js, Javascript, HTML e CSS;</p>
+                    <p>Descrição: Estágio que me proporcionou experiência em desenvolvimento Web e aplicativos utilizando as tecnologias node.js, Javascript, <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>;</p>
                     <hr>
 
                     <h3>Unect Jr. -<span> De 06/2019 Até Atual</span></h3> 
                     <p>Enquadramento Funcional: Assessor de Marketing/Projetos</p>
-                    <p>Descrição: A Unect Jr é uma empresa Júnior do ramo de TI que desenvolve sites e aplicações web. Em minha vivência empresarial obtive experiência em manipulação de imagens, desenvolvimento web, Web Design, gestão de pessoas, estratégias de vendas, idas em congressos, entre outras;</p>          
+                    <p>Descrição: A Unect Jr é uma empresa Júnior do ramo de <abbr title="Tecnologia da Informação">TI</abbr> que desenvolve sites e aplicações web. Em minha vivência empresarial obtive experiência em manipulação de imagens, desenvolvimento web, Web Design, gestão de pessoas, estratégias de vendas, idas em congressos, entre outras;</p>          
                 </article>      
             </div>
         </section>
@@ -125,15 +157,15 @@
                     <p>Carga Horária: 54 horas</p>
                     <p>Ano: 2020</p>
                     <br>
-                    <a target="_blank" href="https://github.com/Tiago-Perri/WebDesignCompleto-UDEMY">Clique aqui para ir ao repositório destinado a esse curso!</a>
+                    <a target="_blank" class="link-cursos" href="https://github.com/TiagoPerri/WebDesignCompleto-UDEMY">Ir ao repositório!</a>
                     <hr>
                     
-                    <h3>CSS Flexbox</h3>
+                    <h3><abbr title="Cascading Style Sheets">CSS</abbr> Flexbox</h3>
                     <p>Plataforma de ensino: Origamid</p>
                     <p>Carga Horária: 3 horas</p>
                     <p>Ano: 2020</p>
                     <br>
-                    <a target="_blank" href="https://github.com/Tiago-Perri/FlexBlog">Clique aqui para ir ao repositório destinado a esse curso!</a>
+                    <a target="_blank" class="link-cursos" href="https://github.com/TiagoPerri/FlexBlog">Ir ao repositório!</a>
                     <hr>
                     
                     <h3>Iniciação Profissional em Tecnologia da Informação e Comunicação</h3>
@@ -205,7 +237,7 @@
                     <p>Plataforma de ensino: Udemy</p>
                     <p>Carga Horária de 3 horas</p>
         
-                    <h3>Introdução a linguagem HTML</h3>
+                    <h3>Introdução a linguagem <abbr title="HyperText Markup Language">HTML</abbr></h3>
                     <p>Ano: 2019</p>
                     <p>Plataforma de ensino: Udemy</p>
                     <p>Carga Horária de 1 hora</p>
@@ -227,14 +259,14 @@
             <div class="container"  data-aos="fade-down" data-aos-duration="1000">
                 <h2>Congressos, Eventos e Palestras</h2>
 
-                <article data-aos="flip-left" data-aos-duration="1000">
+                <article data-aos="flip-left" data-aos-duration="1000" class="congressos">
                     <h3>Congressos</h3>
                     <h4>Londrina Jr. 2.0</h4>
-                    <p>Organizador: NEJ Londrina</p>
+                    <p>Organizador: <abbr title="Núcleo das Empresas Juniores">NEJ</abbr> Londrina</p>
                     <p>Ano: 2019</p>
                     <ul>Palestras e atividades:
                         <li>Aiquefome - Bruno Miguel falando sobre produto e inovação (Palestra)</li>
-                        <li>Construindo a marca de sua EJ - Mariana Finco</li>
+                        <li>Construindo a marca de sua <abbr title="Empresa Junior">EJ</abbr> - Mariana Finco</li>
                         <li>Desplastifique: Empreendedorismo e sustentabilidade - Virgínia Becker (Palestra)</li>
                         <li>Mesa redonda com Luccas Silvestre, Felipe Scarinci Lanza (Carrinho cheio) e Rodrigo Gerardt</li>
                         <li>Momento AMBEV (Palestra)</li>
@@ -246,20 +278,22 @@
                     <p>Ano: 2020</p>
                     <p>De 04/05/2020 até 08/05/2020</p>
                     <ul>Cronograma:
-                        <li>Entre o presente e o futuro: como estar preparado para viver o mundo VUCA de hoje e amanhã - Fernanda Burin, Chefe da equipe de seleção e recutamento do <b>Bradesco</b></li>
-                        <li>Produtividade e priorização em tempos de pandemia - Matheus Fonseca da <b>Movile</b></li>
-                        <li>Liderança no caos - Luiza Helena Trajano, Presidente do conselho da <b>Magazine Luiza</b></li>
-                        <li>Utilizando metodologias ágeis para atingir a excelência em projetos - Isabela Fernandes da <b>ACE</b></li>
-                        <li>Inovação no modelo de negócios em tempos incertos - Mirella Damaso, Gerente Digital Inovation da <b>Heineken</b></li>
-                        <li>Quarentena: Porque ela pode ser chave para o meu desenvolvimento pessoal? - Tassiane de Grandis e Lavínia Pedrosa da <b>Qura Editora</b></li>
-                        <li>Criatividade em campanhas digitais: Como fazer com que as suas redes sociais não virem - Flávio Salzer da <b>Agência Mutato</b></li>
-                        <li>Salas de Conexão: Comunicação interna a externa em tempos de pandemia - Ariel Grunkraut, Vice presidente de Marketing do <b>Burguer King</b></li>
-                        <li>Papo reto: fortalecendo a cultura e o time em tempos incertos - Guilherme Benchimol, CEO da <b>XP Inc.</b></li>
+                        <li>Entre o presente e o futuro: como estar preparado para viver o mundo <abbr title="Volátil, uncertain, complexo e ambíguo">VUCA</abbr> de hoje e amanhã - <span>Fernanda Burin</span>, Chefe da equipe de seleção e recutamento do <span>Bradesco</span></li>
+                        <li>Produtividade e priorização em tempos de pandemia - <span>Matheus Fonseca</span> da <span>Movile</span></li>
+                        <li>Liderança no caos - <span>Luiza Helena Trajano</span>, Presidente do conselho da <span>Magazine Luiza</span></li>
+                        <li>Utilizando metodologias ágeis para atingir a excelência em projetos - <span>Isabela Fernandes</span> da <span>ACE</span></li>
+                        <li>Inovação no modelo de negócios em tempos incertos - <span>Mirella Damaso</span>, Gerente Digital Inovation da <span>Heineken</span></li>
+                        <li>Quarentena: Porque ela pode ser chave para o meu desenvolvimento pessoal? - <span>Tassiane de Grandis e Lavínia Pedrosa</span> da <span>Qura Editora</span></li>
+                        <li>Criatividade em campanhas digitais: Como fazer com que as suas redes sociais não virem - <span>Flávio Salzer</span> da <span>Agência Mutato</span></li>
+                        <li>Salas de Conexão: Comunicação interna a externa em tempos de pandemia - <span>Ariel Grunkraut</span>, Vice presidente de vendas e Marketing do <span>Burguer King Brasil</span></li>
+                        <li>Papo reto: fortalecendo a cultura e o time em tempos incertos - <span>Guilherme Benchimol</span>, <abbr title="Chief Executive Officer">CEO</abbr> da <span>XP Inc.</span></li>
+                        <li>Como potencializar a criatividade para inovar na sua empresa - <span>Pavlos Dias</span>, Head de inovação da <span>Faber Castel</span></li>
                     </ul>
                 </article>
 
                 <article data-aos="flip-right" data-aos-duration="1000">
                     <h3>Eventos</h3>
+
                     <h4>Semana OmniStack 11</h4>
                     <p>Organizador: Rocketseat</p>
                     <p>Data de conclusão: 29 de março de 2020</p>
@@ -269,15 +303,20 @@
                     <p>Organizador: Fluency Academy</p>
                     <p>Data: De 3 a 10 de fevereiro de 2020</p>
                     <p>Carga Horária: 2 horas</p>
+
+                    <h4>2º Maratona do <abbr title="User Experience">UX</abbr> Design</h4>
+                    <p>Organizador: UX Unicórnio</p>
+                    <p>Data: De 11/05/2020 até 18/05/2020</p>
+                    <p>Carga Horária: 4 Horas</p>
                 </article>
 
-                <article data-aos="flip-left" data-aos-duration="1000">
+                <article data-aos="flip-left" data-aos-duration="1000" class="palestras">
                     <h3>Palestras</h3>
                     
                     <h4>A experiência de um aluno na NASA</h4>
                     <p>Ano: 2019</p>
 
-                    <h4>Adoção de IA no setor industrial</h4>
+                    <h4>Adoção de <abbr title="Inteligência artificial">IA</abbr> no setor industrial</h4>
                     <p>Ano: 2019</p>
 
                     <h4>Micro empreendedorismo individual</h4>
@@ -326,6 +365,7 @@
                     <nav>
                         <ul>
                             <li><a href="#home">Home</a></li>
+                            <li><a href="#portfolio">Portfólio</a></li>
                             <li><a href="#trabalho">Atuação Profissional</a></li>
                             <li><a href="#estudos">Formação Acadêmica</a></li>
                             <li><a href="#cursos">Cursos</a></li>
@@ -358,6 +398,7 @@
         <script src="js/menu.js"></script>
         <script src="js/main.js"></script>
         <script src="js/scroll.js"></script>
+        <script src="js/carousel.js"></script>
         
         <script>
             AOS.init();

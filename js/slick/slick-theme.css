@@ -122,7 +122,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -55px;
 
     display: block;
 
@@ -192,7 +192,7 @@
     text-align: center;
 
     opacity: .25;
-    color: #045B00;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +200,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: #045B00;
+    color: white;
 }

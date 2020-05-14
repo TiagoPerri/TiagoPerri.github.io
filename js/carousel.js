@@ -1,5 +1,5 @@
 $('.carousel').slick({
-    arrows:false,
+    arrows:true,
     dots:true,
     infinite: true,
     autoplay: false,
