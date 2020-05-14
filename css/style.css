@@ -1,9 +1,9 @@
+/*-----------------------------
+            HEADER
+------------------------------*/
+
 .header{
     width: 100%;
-}
-
-abbr{
-    text-decoration: none;
 }
 
 .container-header{
@@ -60,7 +60,7 @@ abbr{
     cursor: pointer;
 }
 
-label{
+.label-menu{
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
@@ -84,6 +84,10 @@ label{
 .logo i{
     font-size: .8em;
 }
+
+/*-----------------------------
+            HOME
+------------------------------*/
 
 .profile{
     width: 100%;
@@ -155,6 +159,10 @@ label{
     align-self: center;
 }
 
+/*-----------------------------
+        CONTAINER GERAL
+------------------------------*/
+
 .container{
     max-width: 70%;
     margin: auto;
@@ -172,11 +180,6 @@ label{
     text-transform: uppercase;
     color: #0B1980;
     font-weight: bold;
-}
-
-.container h3 a{
-    font-weight: bold;
-    color: #0B1980;
 }
 
 .container span{
@@ -198,29 +201,38 @@ label{
     font-size: 1.35em;
 }
 
+/*-----------------------------
+          PORTFOLIO
+------------------------------*/
+
 .portfolio{
     width: 100%;
     min-height: 900px;
     background-color: #0B1980;
 }
 
-.portfolio h2{
-    text-align: center;
-    border: none;
-    color: white;
-    letter-spacing: 4px;
-    padding-bottom: 30px;
+.container-portfolio{
+    max-width: 70%;
+    margin: auto;
 }
 
-.portfolio h3{
-    color: #045B00;
+.container-portfolio h2{
     text-align: center;
-    background-color: rgb(0,0,0,.5);
+    padding: 44px 0 15px;
+    border: none;
+    color: white;
+    font-size: 3em;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
 }
 
 .portfolio-card h3{
     padding: 20px 0;
     margin-bottom: 20px;
+    font-size: 2em;
+    color: #045B00;
+    text-align: center;
+    background-color: rgb(0,0,0,.5);
 }
 
 .content-portfolio-card{
@@ -240,6 +252,8 @@ label{
     color: beige;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 1.3em;
+    line-height: 1.7;
 }
 
 .content-portfolio-card a{
@@ -251,6 +265,7 @@ label{
     text-align: center;
     box-shadow: 0px 7px black;
     background-color: rgba(0,0,0,.4);
+    font-size: 1.3em;
 }
 
 .content-portfolio-card a:hover{
@@ -261,8 +276,12 @@ label{
 .content-portfolio-card a:active{
     box-shadow: none;
     position: relative;
-    top: 3px;
+    top: 1px;
 }
+
+/*-----------------------------
+        ESPECIFICAS
+------------------------------*/
 
 .estudos h3{
     font-size: 1.5em;
@@ -309,6 +328,10 @@ label{
 .others .container .palestras h4{
     font-size: 1.4em;
 }
+
+/*-----------------------------
+            FOOTER
+------------------------------*/
 
 .footer{
     width: 100%;
@@ -360,8 +383,12 @@ label{
     font-size: 1.1em;
 }
 
+/*-----------------------------
+        RESPONSIVIDADE
+------------------------------*/
+
 @media screen and (max-width: 1024px){
-    .container-header, .container-profile, .container-footer, .sub-footer, .container{
+    .container-header, .container-profile, .container-portfolio, .container-footer, .sub-footer, .container{
         max-width: 80%;
     }
 }
@@ -419,6 +446,10 @@ label{
 
     .container p, .container a{
         font-size: 1em
+    }
+
+    .content-portfolio-card a{
+        width: 70%;
     }
 
     .content-portfolio-card p{
