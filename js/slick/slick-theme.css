@@ -135,10 +135,17 @@
     text-align: center;
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
     .slick-dots
     {
         bottom: -25px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .slick-dots
+    {
+        bottom: -15px;
     }
 }
 
