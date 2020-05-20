@@ -309,6 +309,7 @@
 .color2{
     background-color: #0B1980;
     border: 1px solid black;
+    color: white;
 }
 
 .color3{
@@ -320,9 +321,13 @@
     background-color: beige;
 }
 
+.font-div{
+    margin-bottom: 30px;
+}
+
 .font-div p{
     color: black;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 /*-----------------------------
@@ -461,6 +466,11 @@
     .content-portfolio-card a{
         width: 40%;
     }
+
+    .font-div p{
+        color: black;
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 628px){
@@ -518,6 +528,11 @@
     .content-portfolio-card img{
         box-shadow: none;
     }
+
+    .font-div p{
+        color: black;
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -544,6 +559,11 @@
     .color1, .color2, .color3, .color4{
         width: 60px;
         height: 150px;
+    }
+
+    .font-div p{
+        color: black;
+        font-size: 1.7em;
     }
 }
 
