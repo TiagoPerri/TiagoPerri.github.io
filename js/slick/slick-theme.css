@@ -230,3 +230,10 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width:320px){
+    .slick-dots
+    {
+        bottom: -20px;
+    }
+}

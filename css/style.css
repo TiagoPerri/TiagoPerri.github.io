@@ -208,7 +208,7 @@
 
 .portfolio{
     width: 100%;
-    min-height: 900px;
+    min-height: 950px;
     background-color: #0B1980;
 }
 
@@ -293,7 +293,7 @@
     color: white;
     padding: 20px 0 0;
     border-bottom: 2px dashed white;
-    margin-bottom: 20px;
+    margin: 0 0 10px 0;
 }
 
 .color1, .color2, .color3, .color4{
@@ -320,15 +320,6 @@
 
 .color4{
     background-color: beige;
-}
-
-.font-div{
-    margin-bottom: 30px;
-}
-
-.font-div p{
-    color: black;
-    font-size: 1.7em;
 }
 
 /*-----------------------------
@@ -467,11 +458,6 @@
     .content-portfolio-card a{
         width: 40%;
     }
-
-    .font-div p{
-        color: black;
-        font-size: 1.7em;
-    }
 }
 
 @media screen and (max-width: 628px){
@@ -529,11 +515,6 @@
     .content-portfolio-card img{
         box-shadow: none;
     }
-
-    .font-div p{
-        color: black;
-        font-size: 1.7em;
-    }
 }
 
 @media screen and (max-width: 375px){
@@ -563,7 +544,6 @@
     }
 
     .font-div p{
-        color: black;
         font-size: 1.2em;
     }
 }
