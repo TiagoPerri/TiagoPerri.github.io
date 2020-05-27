@@ -58,6 +58,7 @@
 
 .header__btnMenu:hover,label:hover{
     cursor: pointer;
+    color: #0B1980;
 }
 
 .label-menu{
@@ -563,7 +564,7 @@
 
     .font-div p{
         color: black;
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
 }
 
