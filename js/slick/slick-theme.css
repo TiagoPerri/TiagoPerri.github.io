@@ -219,10 +219,18 @@
         bottom: -45px;
     }
 
+    .slick-prev{
+        left: -30px;
+    }
+
+    .slick-next{
+        right: -30px;
+    }
+
     .slick-prev:before,
     .slick-next:before
     {
-        display: none;
+        font-size: 25px;
     }
 
     .slick-dots li button:before
@@ -234,6 +242,21 @@
 @media screen and (max-width:320px){
     .slick-dots
     {
-        bottom: -20px;
+        bottom: -25px;
+    }
+
+    
+    .slick-prev{
+        left: -25px;
+    }
+
+    .slick-next{
+        right: -25px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-size: 22px;
     }
 }
