@@ -26,6 +26,7 @@
 
 .zapzap i{
     font-size: 2em;
+    color: beige;
 }
 
 .zapzap p{
@@ -496,14 +497,14 @@
     }
 
     .btn-fixed{
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
 
         bottom: 15px;
     }
 
     .btn-fixed .zapzap i{
-        font-size: 1.8em;
+        font-size: 2.4em;
         align-self: center;
     }
 
