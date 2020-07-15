@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -35px;
+    left: -115px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +97,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -85px;
 }
 [dir='rtl'] .slick-next
 {
@@ -179,15 +179,15 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 
     content: '•';
     text-align: center;
@@ -205,6 +205,16 @@
 }
 
 
+@media screen and (max-width:1024px){
+  
+    .slick-prev{
+        left: -40px;
+    }
+
+    .slick-next{
+        right: -30px;
+    }
+}
 
 @media screen and (max-width:768px){
     .slick-dots

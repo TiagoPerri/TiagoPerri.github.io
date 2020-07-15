@@ -1,3 +1,39 @@
+.btn-fixed{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+
+    width: 16%;
+    background-color: #045B00;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    font-family: 'Share Tech', sans-serif;
+    padding: 12px;
+    z-index: 999;
+}
+
+.btn-fixed:hover{
+    border: 2px black dashed;
+}
+
+.zapzap{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.zapzap i{
+    font-size: 2em;
+}
+
+.zapzap p{
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+
 /*-----------------------------
             HEADER
 ------------------------------*/
@@ -457,6 +493,22 @@
 
     .content-portfolio-card a{
         width: 40%;
+    }
+
+    .btn-fixed{
+        width: 50px;
+        height: 50px;
+
+        bottom: 15px;
+    }
+
+    .btn-fixed .zapzap i{
+        font-size: 1.8em;
+        align-self: center;
+    }
+
+    .btn-fixed .zapzap p{
+        display: none;
     }
 }
 
