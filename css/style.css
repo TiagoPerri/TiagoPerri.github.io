@@ -553,6 +553,10 @@
         font-size: 1em
     }
 
+    .container a:hover{
+        font-size: 1.1em;
+    }
+
     .portfolio{
         min-height: 1000px;
     }
