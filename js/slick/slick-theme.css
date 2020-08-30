@@ -216,19 +216,19 @@
     }
 }
 
-@media screen and (max-width:768px){
-    .slick-dots
-    {
+@media screen and (max-width:1000px){
+    .slick-dots{
         bottom: -25px;
     }
 }
 
-@media screen and (max-width:425px){
-    .slick-dots
-    {
-        bottom: -45px;
+@media screen and (max-width:560px){
+    .slick-dots{
+        bottom: 5px;
     }
+}
 
+@media screen and (max-width:425px){
     .slick-prev{
         left: -30px;
     }
@@ -246,6 +246,12 @@
     .slick-dots li button:before
     {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width:405px){
+    .slick-dots{
+        bottom: 5px;
     }
 }
 
