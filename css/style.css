@@ -13,6 +13,32 @@
     z-index: 999;
 }
 
+.btn-fixed-home{
+    position: fixed;
+    bottom: 105px;
+    right: 10px;
+
+    width: 9%;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    color: beige;
+    font-family: 'Share Tech', sans-serif;
+    padding: 12px;
+    z-index: 999;
+}
+
+.btn-home{
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-fixed-home:hover{
+    border: 2px beige dashed;
+}
+
 .btn-fixed:hover{
     border: 2px black dashed;
 }
@@ -383,6 +409,13 @@
     padding: 25px 0 5px;
 }
 
+.h3Curso{
+    border-bottom: 2px solid #045B00;
+    font-size: 1.7em !important;
+    color: #045B00 !important;
+    margin-top: 25px;
+}
+
 .others .container h4{
     font-size: 1.6em;
     color: #0B1980;
@@ -508,8 +541,12 @@
         align-self: center;
     }
 
-    .btn-fixed .zapzap p{
+    .btn-fixed .zapzap p, .btn-fixed-home .btn-home p{
         display: none;
+    }
+
+    .btn-fixed-home{
+        bottom: 90px;
     }
 }
 
@@ -546,7 +583,7 @@
     }
 
     .container h3{
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
 
     .container p, .container a{
